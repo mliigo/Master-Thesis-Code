@@ -25,14 +25,18 @@ The files can be classified into three groups: Estimation, Simulation Study and 
 
     * _ML_TVP_DFM_simulate.py_ : Functions for simulating the model. Its main function is "sim", which simulates the observables, factors and parameters, and uses them to compute the variance decompositions.
     * _Sim_Est_grouped.py_     : Groups simulation, estimation and result extraction into one function to be used in Simulation_Study.py.
-    * _Simulation_Study.py_    : Implements the Monte Carlo simulation study. It simulates and estimates several models in parallel. Four regimes are considered, in which the degree of time-variation in the loadings and stochastic volatilities is either set to a low or high value, respectively. The simulated and estimated values are saved in the Sim_Saves folder.
+    * _Simulation_Study.py_    : Implements the Monte Carlo simulation study. It simulates and estimates several models in parallel. Four regimes are considered, in which the degree of time-variation in the loadings and stochastic volatilities is either set to a low or high value, respectively.
     * _Sim_Evaluation.py_      : Uses the simulated and estimated factors, parameters and variance decompositions to evaluate the performance of the model and estimation procedure.
 
 * __Application__
 
     * _Data_Analysis.py_       : Plots median quarterly inflation rates by development-group and computes summary statistics. Uses the dataset "Inflation_Data_WorldBank.xlsx".
-    * _App_Estimation.py_      : Estimates the model based on quarterly inflation rates of 71 countries from 3 different groups spanning the period 1970-Q2 – 2023-Q3. The posterior draws are saved as "Application_Trace_last_10k.pkl".
+    * _App_Estimation.py_      : Estimates the model based on quarterly inflation rates of 71 countries from 3 different groups spanning the period 1970-Q2 – 2023-Q3.
     * _App_Evaluation.py_      : Evaluates the estimation results to study the evolution of international inflation dynamics. It analyzes how the importance of global and group factors has evolved for different countries and groups.
+
+## Note
+
+_Simulation_Study.py_ saves the simulated and estimated values in a folder called "Sim_Saves" to be used in _Sim_Evaluation.py_. _App_Estimation.py_ saves the posterior draws as "Application_Trace_last_10k.pkl" to be used in _App_Evaluation.py_.
 
 ## References
 
