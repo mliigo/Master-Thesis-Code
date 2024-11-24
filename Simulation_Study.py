@@ -101,7 +101,8 @@ def Multi_Sim_Est(ID, N_sims, N_cores, s2_eta_all, s2_zeta_all, seed):
     models are simulated and estimated at the same time until N_sims number of
     models have been successfuly simulated and estimated. The simulated and
     estimated values are saved as pickled dictionaries in the folder Sim_Saves.
-    Uses the sim_est function defined in Sim_Est_grouped.py.
+    Make sure that such a folder is present in the working directory. Uses the 
+    sim_est function defined in Sim_Est_grouped.py.
 
     ID          : identifier attached to the beginning of the saved dictionary's
                   name (ID_storage_N_sims)
@@ -202,8 +203,9 @@ def Multi_Sim_Est(ID, N_sims, N_cores, s2_eta_all, s2_zeta_all, seed):
 # To run the simulation study for a given time-variation regime (LL, LH, HL, HH) remove the
 # hashtags for the respective regime and run it (done in this way since multiprocessing 
 # reruns the main file and the hashtags prevent it from starting too many processes).
-# Results are saved as pickled dictionaries in the Sim_Saves folder.
-# The number of cores can be adjusted with N_cores.
+# Results are saved as pickled dictionaries in the Sim_Saves folder (make sure that a folder
+# with this name is present in the working directory). The number of cores can be adjusted 
+# with N_cores.
 
 #if __name__=="__main__":
 #    Multi_Sim_Est(ID="LL", N_sims=200, N_cores=20, s2_eta_all=0.3**2, s2_zeta_all=0.05**2, 
