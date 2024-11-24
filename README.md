@@ -24,7 +24,7 @@ The files can be classified into three groups: Estimation, Simulation Study and 
 * __Simulation Study__
 
     * _ML_TVP_DFM_simulate.py_ : Functions for simulating the model. Its main function is "sim", which simulates the observables, factors and parameters, and uses them to compute the variance decompositions.
-    * _Sim_Est_grouped.py_     : Groups simulation, estimation and result extraction into one function to be used in Simulation_Study.py.
+    * _Sim_Est_grouped.py_     : Groups simulation, estimation and result extraction into one function to be used in _Simulation_Study.py_.
     * _Simulation_Study.py_    : Implements the Monte Carlo simulation study. It simulates and estimates several models in parallel. Four regimes are considered, in which the degree of time-variation in the loadings and stochastic volatilities is either set to a low or high value, respectively. It saves the simulated and estimated values as dictionaries in a folder called "Sim_Saves" to be used in _Sim_Evaluation.py_. 
     * _Sim_Evaluation.py_      : Uses the simulated and estimated factors, parameters and variance decompositions from the dictionaries in the "Sim_Saves" folder to evaluate the performance of the model and estimation procedure.
 
