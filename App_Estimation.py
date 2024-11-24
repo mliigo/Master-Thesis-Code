@@ -9,7 +9,8 @@ Countries are split into advanced economies (AEs), emerging market economies
 is 1970-Q2 – 2023-Q3. Data is taken from the World Bank's global inflation 
 database (Ha et al., 2023).
 
-Posterior draws are saved as a python dictionary using the pickle package.
+Posterior draws are saved as a python dictionary named 
+"Application_Trace_last_10k_pkl" using the pickle package.
 They are then evaluated in the file "App_Evaluation.py".
 
 Imports:
