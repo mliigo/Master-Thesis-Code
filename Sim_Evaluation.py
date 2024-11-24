@@ -9,8 +9,10 @@ parameters and variance decompositions. Correlations are seen as a measure of
 accuracy of the estimates, while posterior confidence interval widths measure 
 the uncertainty associated with these estimates.
 
-Note: Functions are used to generate and directly save plots as PNG files.
-      (often relatively large in size and hence not directly displayable)
+Notes: - It uses the simulated and estimated values from the dictionaries
+         obtained in Simulation_Study.py and saved in the "Sim_Saves" folder.
+       - Functions are used to generate and directly save plots as PNG files.
+         (often relatively large in size and hence not directly displayable)
 
 Imports:
 --------
@@ -36,7 +38,7 @@ plt.rcParams["font.serif"] = ["Times New Roman"]
 lcols = {'LL': 'black', 'LH': 'black', 'HL': 'darkgray', 'HH': 'darkgray'}
 ltypes = {'LL': '-', 'LH': '--', 'HL': '-', 'HH': '--'}
 
-# import simulation results
+# import simulation and estimation results
 LL = pd.read_pickle('Sim_Saves/LL_storage_200.pkl')
 LH = pd.read_pickle('Sim_Saves/LH_storage_200.pkl')
 HL = pd.read_pickle('Sim_Saves/HL_storage_200.pkl')
