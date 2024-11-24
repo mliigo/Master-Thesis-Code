@@ -9,6 +9,10 @@ saved as pickled dictionaries in the Sim_Saves folder. Four regimes are consider
 in which the degree of time-variation in the loadings and stochastic volatilities
 is either set to a low or high value, respectively.
 
+Note: Make sure that a folder called "Sim_Saves" is present in the working directory.
+      The simulated and estimated values are saved as dictionaries (one for each
+      regime) in this folder and then used in Sim_Evaluation.py.
+
 Functions:
 ----------
 * Multi_Sim_Est : simultaneously simulates and estimates several models and
