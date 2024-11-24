@@ -204,7 +204,8 @@ def Multi_Sim_Est(ID, N_sims, N_cores, s2_eta_all, s2_zeta_all, seed):
 # hashtags for the respective regime and run it (done in this way since multiprocessing 
 # reruns the main file and the hashtags prevent it from starting too many processes).
 # Results are saved as pickled dictionaries in the Sim_Saves folder (make sure that a folder
-# with this name is present in the working directory). The number of cores can be adjusted 
+# with this name is present in the working directory). The number of cores and hence the 
+# number of models that are being simulatd and estimated simultaneously can be adjusted
 # with N_cores.
 
 #if __name__=="__main__":
